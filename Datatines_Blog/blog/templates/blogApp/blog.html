@@ -1,0 +1,78 @@
+{%extends 'blogApp/base.html'%}
+{%load static%}
+{%block body_block%}
+<head>
+
+<script>
+  AOS.init({
+  duration: 1200,
+})
+
+</script>
+<style>
+    .myclass:hover{
+    color: #0275d8;
+}
+</style>
+</head>
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="posts-listing col-lg-8">
+          <div class="container">
+            <div class="row">
+
+              <!-- post             -->
+              {%for article in queryset%}
+              <div class="post col-xl-6"  data-aos="zoom-in">
+                <div class="post-thumbnail"><img src="{{article.thumbnail.url}}" style="height: 200px;width:380px" alt="..." class="img-fluid"></div>
+                <div class="post-details">
+                  <div class="post-meta d-flex justify-content-between">
+                    <div class="date meta-last text-info">{{article.timestamp}}</div>
+
+                    <div class="category">
+                        {%for cat in article.catagories.all%}
+                        <a href="#" class="text-info">{{cat}}</a>
+                        {%endfor%}
+                    </div>
+
+                  </div><a href="{article.get_absolute_url}}">
+                  <h3><a href="{%url 'blogApp:showPost' pk=article.id%}" class="myclass">{{article.title}}</a></h3></a>
+                  <p class="text-muted">{{article.overview}}</p>
+                  <div class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                      <div class="avatar"><img src="{{article.author.profile_pic.url}}" alt="..." class="img-fluid"></div>
+                      <div class="title"><span class="text-info">{{article.author.user.username}}</span></div></a>
+                    <div class="date text-info"><i class="fa fa-clock-o text-info"></i> {{article.timestamp|timesince}} ago</div>
+                    <div class="comments meta-last"><i class="fa fa-comments-o text-info"></i>{{article.comment_count}}</div>
+                  </div>
+                </div>
+            </div>
+            {%endfor%}
+              </div>
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-template d-flex justify-content-center">
+
+
+                {% if queryset.has_previous %}
+
+            <p><span class="tab"><a class="text-success text-capitalize text-info"  href="?page=1">&laquo; first</a>
+            <span><a class="text-info text-capitalize"  href="?page={{ queryset.previous_page_number }}">previous</a></p>
+        {% endif %}
+
+        <span class="current">
+            Page {{ queryset.number }} of {{ queryset.paginator.num_pages }}.
+        </span>
+
+        {% if queryset.has_next %}
+            <p><span class="tab"><a class="text-success text-capitalize text-info" href="?page={{ queryset.next_page_number }}">next</a>
+            <span> <a href="?page={{queryset.paginator.num_pages }}" class="text-capitalize text-info">last &raquo;</a></p>
+        {% endif %}
+              </ul>
+            </nav>
+          </div>
+        </main>
+       {%include 'blogApp/sideBar.html'%}
+      </div>
+    </div>
+{%endblock%}

@@ -1,0 +1,52 @@
+<script>
+  AOS.init({
+  duration: 1200,
+})
+</script>
+ <aside class="col-lg-4">
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search" data-aos="zoom-out">
+            <header>
+              <h3 class="h6">Search the blog</h3>
+            </header>
+            <form action="{%url 'blogApp:search'%}" class="search-form">
+              <div class="form-group">
+                <input type="text" name="q" placeholder="What are you looking for?">
+                <button type="submit" class="submit text-info"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+          <!-- Widget [Latest Posts Widget]        -->
+      <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+              {%for post in recent%}
+            <div class="blog-posts" data-aos="fade-left">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="{{post.thumbnail.url}}" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong><a href="{%url 'blogApp:showPost' pk=post.id %} ">{{post.title}}</a></strong>
+                    <div class="d-flex align-items-center">
+                      <div class="comments"><i class="fa fa-comments-o"></i>{{post.comments.count}}</div>
+                    </div>
+                  </div>
+                </div>
+            {%endfor%}
+
+          </div>
+          </div>
+
+          <!-- Widget [Categories Widget]-->
+          <div class="widget categories">
+            <header>
+              <h3 class="h6">Categories</h3>
+            </header>
+              {%for cat in catagory_counts%}
+            <div class="item d-flex justify-content-between">
+                <a href="q={{cat.catagories__title}}" class="text-info">{{cat.catagories__title }}</a><span class="text-info">{{cat.catagories__title__count}}</span>
+            </div>
+              {%endfor%}
+          </div>
+
+
+</aside>

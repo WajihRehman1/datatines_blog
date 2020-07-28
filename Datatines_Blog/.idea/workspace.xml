@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32634a31-4dd0-4da2-8e21-e8de7070c3a5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eNXNj17fzOONUHf2xc8lB34JFE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Free lance Projects/LakeWayCottages" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Datatines_Blog\blog\static\img" />
+      <recent name="D:\Datatines_Blog\blog\static" />
+      <recent name="D:\Datatines_Blog\blog\templates\blogApp" />
+      <recent name="D:\Datatines_Blog\blog" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32634a31-4dd0-4da2-8e21-e8de7070c3a5" name="Default Changelist" comment="" />
+      <created>1594162986041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594162986041</updated>
+      <workItem from="1594171424150" duration="820000" />
+      <workItem from="1594253918339" duration="3729000" />
+      <workItem from="1594421167639" duration="4513000" />
+      <workItem from="1594439160791" duration="10040000" />
+      <workItem from="1594597601192" duration="4873000" />
+      <workItem from="1594603282935" duration="2049000" />
+      <workItem from="1594608240709" duration="6394000" />
+      <workItem from="1594724395695" duration="3013000" />
+      <workItem from="1594891912392" duration="7107000" />
+      <workItem from="1594934903662" duration="5891000" />
+      <workItem from="1594966462293" duration="3453000" />
+      <workItem from="1594970135775" duration="4593000" />
+      <workItem from="1595014611675" duration="5361000" />
+      <workItem from="1595152815551" duration="6766000" />
+      <workItem from="1595311301015" duration="6298000" />
+      <workItem from="1595327580639" duration="4502000" />
+      <workItem from="1595430171209" duration="14000" />
+      <workItem from="1595893471655" duration="8750000" />
+      <workItem from="1595973151753" duration="3899000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1594164860678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594164860678" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1594165390409">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594165390409" />
+  </component>
+</project>

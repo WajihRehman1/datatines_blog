@@ -1,0 +1,43 @@
+{%extends 'blogApp/base.html'%}
+{%load static%}
+{%block body_block%}
+<script>
+  AOS.init({
+  duration: 1200,
+})
+
+</script>
+<style>
+    .myclass:hover{
+    color: #0275d8;
+}
+</style>
+    <section class="latest-posts">
+      <div class="container" >
+        <header>
+          <h2 class="text-info blockquote">Here are the search results :</h2>
+        </header>
+        <div class="row">
+ {%for l in queryset%}
+          <div class="post col-md-4" data-aos="flip-right">
+            <div class="post-thumbnail" ><a href="post.html"><img src="{{l.thumbnail.url}}" alt="..." style="height:200px;width: 100%" class="img-fluid border border-info"></a></div>
+            <div class="post-details">
+              <div class="post-meta d-flex justify-content-between">
+                <div class="date text-info">{{l.timestamp}}</div>
+                <div class="category">
+                  {%for cat in l.catagories.all%}
+                  <a href="#"class="text-info">{{cat}}</a>
+                  {%endfor%}
+                </div>
+              </div><a href="">
+                <h3 class="h4"><a href="{%url 'blogApp:showPost' pk=l.id%}" class="myclass">{{l.title}}</a></h3>
+              <p class="text-muted">{{l.overview|safe}}</p>
+            </div>
+          </div>
+      {%endfor%}
+        </div>
+      </div>
+    </section>
+
+
+{%endblock%}
